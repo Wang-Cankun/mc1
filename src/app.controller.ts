@@ -1,5 +1,6 @@
-import { Controller, Get, Param } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common'
+import { AppService } from './app.service'
+import { PostDto } from './dto/post-dto'
 
 @Controller()
 export class AppController {
@@ -7,11 +8,16 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return this.appService.getHello();
+    return this.appService.getHello()
   }
 
   @Get(':id')
   findOne(@Param('id') id: string): string {
-    return this.appService.findOne(id);
+    return this.appService.findOne(id)
+  }
+
+  @Post()
+  postOne(@Body() postDto: PostDto): PostResult {
+    return this.appService.postOne(postDto)
   }
 }
