@@ -1,3 +1,5 @@
+[![Test](https://github.com/Wang-Cankun/mc1/actions/workflows/test.yml/badge.svg?branch=master)](https://github.com/Wang-Cankun/mc1/actions/workflows/test.yml)
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
