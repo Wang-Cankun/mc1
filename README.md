@@ -28,6 +28,8 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+Example repo for Microservices.
+
 ## Installation
 
 ```bash
