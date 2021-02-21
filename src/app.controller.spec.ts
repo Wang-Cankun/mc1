@@ -15,8 +15,10 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World: MC1!"', () => {
-      expect(appController.getHello()).toBe('Hello World: MC1!');
+    it('should return "Hello World: microservice example!"', () => {
+      expect(appController.getHello()).toBe(
+        'Hello World: microservice example!',
+      );
     });
   });
 });
