@@ -7,6 +7,7 @@
 This is an example repo for:
 
 - [Nest](https://github.com/nestjs/nest) server side [microservices](https://docs.nestjs.com/microservices/basics)
+- gRPC implementation (Client at [here](https://github.com/Wang-Cankun/nestjs-microservice-client))
 - Unit test and e2e test
 - GitHub actions and Codecov setup (Badge at README.md)
 

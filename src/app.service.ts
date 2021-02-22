@@ -21,4 +21,8 @@ export class AppService {
       timestamp: new Date()
     }
   }
+
+  public accumulate(data: number[]): number {
+    return (data || []).reduce((a, b) => Number(a) + Number(b))
+  }
 }
