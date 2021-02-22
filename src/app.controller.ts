@@ -32,8 +32,7 @@ export class AppController {
   }
 
   @GrpcMethod('AppController', 'Accumulate')
-  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-  accumulate(numberArray: INumberArray, metadata: any): ISumOfNumberArray {
+  accumulate(numberArray: INumberArray): ISumOfNumberArray {
     this.logger.log(`Adding ${numberArray.data}`)
     return { sum: this.appService.accumulate(numberArray.data) }
   }
